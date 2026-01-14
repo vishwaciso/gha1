@@ -1,0 +1,13 @@
+name: manual ci 
+
+on:
+  workflow_dispatch:
+
+jobs:
+   job1:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: just run
+          run: echo "mass prince"
+          
