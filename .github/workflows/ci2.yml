@@ -9,6 +9,9 @@ jobs:
 
       steps:
         - name: just run
+          env:
+            welcome: "vishwa"
           run: | 
             echo "mass prince"
             echo " ${{ vars.MASS_USER }} "
+            echo " $welcome"
