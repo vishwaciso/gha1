@@ -25,7 +25,7 @@ jobs:
             echo " calling repo var as assigned to global var $super "
             echo "calling job level var $surya"
             echo "calling step level var $stepvar "
-            echo "calling repo setting level var $MASS_USER"
+            echo "calling repo setting level var ${{ vars.MASS_USER }}"
             echo "finally global var repo lvel $duper "
             
             
