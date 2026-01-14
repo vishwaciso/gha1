@@ -9,5 +9,6 @@ jobs:
 
       steps:
         - name: just run
-          run: echo "mass prince"
-          
+          run: | 
+            echo "mass prince"
+            echo " ${{ vars.MASS_USER }} "
