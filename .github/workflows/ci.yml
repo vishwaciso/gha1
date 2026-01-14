@@ -1,0 +1,33 @@
+name: just ci
+
+
+
+env:
+   super: ${{ vars.MASS_USER }}
+   duper: "yes i m fine"
+
+on:
+  push:
+    branches:
+       - main
+
+jobs:
+   job1:
+      runs-on: ubuntu-latest
+      env:
+         surya: "dhanya"
+
+      steps:
+        - name: printvs
+          env:
+            stepvar: "yes step var"
+          run: | 
+            echo " calling repo var as assigned to global var $super "
+            echo "calling job level var $surya"
+            echo "calling step level var $stepvar "
+            echo "calling repo setting level var $MASS_USER"
+            echo "finally global var repo lvel $duper "
+            
+            
+   
+   
